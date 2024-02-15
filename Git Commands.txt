@@ -1,0 +1,59 @@
+Beginners Guide -> https://youtu.be/Ez8F0nW6S-w?si=Z1hIdRHuWyMCSQyp
+
+# Configuring git ->
+	git config --global user.name “KamalKumarSahu554”
+	git config --global user.email “kamalkumar554@outlook.com”
+	git config --list
+
+
+# Clone & Status
+clone - Cloning a repositary on our local machine
+	git clone <Link>
+status - dispalys the state of the code
+	git status
+
+
+# Add & Commit
+add - adds new or changed files in your working directory to the Git staging area
+	git add <file name>
+commit - it is record of change
+	git commit -m "some messege"
+
+
+# Push Command
+push - upload local repo content to remote
+	git push origin main
+
+
+
+# Folder upload Command for Git
+In the directory
+
+	git init  (initialization of git in the directory)
+	ls -a  (to check git initialied or not)
+	git remote -v  (add all the efiles to reposetory)
+	git commit -m “commit message”
+	git remote add origin <GitHub link>
+	git remote -v  (to verify remote)
+	git branch (to check branch)
+	git branch -M main (to rename branch)
+
+=>if (remote origin already exist)	git remote set-url origin <GitHub link>
+	git push -u origin main
+
+
+=> If shows this error
+
+! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Dauntless554/YouTube_Clone_Project.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+	git checkout -b my-new-branch
+	git add .
+	git commit -m "New branch"
+	git push -u origin my-new-branch
